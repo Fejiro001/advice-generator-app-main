@@ -1,6 +1,6 @@
 let adviceNumber = document.querySelector("#advice-number");
 let adviceText = document.querySelector("#advice");
-let adviceButton = document.querySelector("#advice-button");
+let adviceButton = document.querySelector(".advice-button");
 let dice = document.querySelector(".dice");
 
 let apiURL = "https://api.adviceslip.com";
@@ -9,7 +9,6 @@ let apiURL = "https://api.adviceslip.com";
 async function fetchData() {
     let response = await fetch(`${apiURL}/advice`);
     let data = await response.json();
-    // console.table(data);
     displayAdvice(data);
 }
 
@@ -18,9 +17,6 @@ function displayAdvice(data) {
     adviceNumber.textContent = data.slip.id;
     adviceText.textContent = '"' + data.slip.advice + '"';
 }
-
-// Shows a new advice on loading the website
-window.addEventListener('load', () => fetchData());
 
 // Changes to a new advice text and corresponding id number on clicking
 adviceButton.addEventListener('click', () => {

@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A website that displays advice from an API on loading or clicking the button.">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://api.adviceslip.com">
   <title>Advice generator app</title>
 
 </head>
@@ -16,18 +18,23 @@
   <main>
     <section>
       <h1>
-        Advice #<span id="advice-number"></span>
+        Advice #<span id="advice-number">117</span>
       </h1>
 
-      <p class="advice" id="advice"></p>
+      <p class="advice" id="advice">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
 
       <picture>
         <source media="(min-width: 600px)" srcset="./assets/images/pattern-divider-desktop.svg">
         <img src="./assets/images/pattern-divider-mobile.svg" alt="a pattern divider">
       </picture>
 
-      <button id="advice-button"><img id="advice-button" class="dice" src="./assets/images/icon-dice.svg" alt="a dice with five dots"></button>
+      <button class="advice-button"><img class="advice-button dice" src="./assets/images/icon-dice.svg" alt="a dice with five dots"></button>
     </section>
+
+    <div class="attribute">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/Fejiro001">Fejiro Abere</a>.
+    </div>
   </main>
 
   <script src="./script/script.js"></script>
