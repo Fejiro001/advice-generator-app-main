@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/advice-generator-flexboxapi-pvHA6CThBq)
 - Live Site URL: [Live Site](https://fejiro001.github.io/advice-generator-app-main/)
 
 ## My process
