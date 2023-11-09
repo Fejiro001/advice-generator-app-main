@@ -45,12 +45,13 @@ section {
     justify-content: center;
     align-items: center;
     gap: var(--gap);
-    padding: calc(var(--gap) + 2rem) var(--pad);
+    padding: calc(var(--gap) + 2rem) var(--gap);
     margin: var(--pad);
     max-width: 30rem;
     border-radius: 0.5rem;
     overflow-wrap: break-word;
     text-align: center;
+    transition: height 500ms ease-in-out;
 }
 
 h1 {
@@ -77,9 +78,19 @@ button {
 button .dice {
     max-width: 100%;
 }
-
+.rollDice {
+    animation: rollDice 500ms ease-in-out;
+}
+@keyframes rollDice {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
 button:hover,
-button:focus {
+button:active {
     cursor: pointer;
     box-shadow: 0 0 1rem .1rem var(--neon-green);
 }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="A website that displays advice from an API on loading or clicking the button.">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/style.css">
   <title>Advice generator app</title>
@@ -16,19 +16,17 @@
   <main>
     <section>
       <h1>
-        Advice #<span id="advice-number">12545</span>
+        Advice #<span id="advice-number"></span>
       </h1>
 
-      <p class="advice" id="advice">"The house is built on a solid foundation. It will stand the test of time."</p>
+      <p class="advice" id="advice"></p>
 
       <picture>
         <source media="(min-width: 600px)" srcset="./assets/images/pattern-divider-desktop.svg">
         <img src="./assets/images/pattern-divider-mobile.svg" alt="a pattern divider">
       </picture>
 
-      <button>
-        <img class="dice" src="./assets/images/icon-dice.svg" alt="a dice with five dots">
-      </button>
+      <button id="advice-button"><img id="advice-button" class="dice" src="./assets/images/icon-dice.svg" alt="a dice with five dots"></button>
     </section>
   </main>
 
